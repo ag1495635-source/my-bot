@@ -1,9 +1,10 @@
+import os
 import asyncio
 from aiogram import Bot, Dispatcher
 from aiogram.types import Message, BusinessMessagesDeleted
 
 TOKEN = os.getenv("BOT_TOKEN")
-MY_ID = int(os.getenv("MY_ID")) 
+MY_ID = int(os.getenv("MY_ID"))
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
