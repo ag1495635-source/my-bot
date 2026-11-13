@@ -2,8 +2,8 @@ import asyncio
 from aiogram import Bot, Dispatcher
 from aiogram.types import Message, BusinessMessagesDeleted
 
-TOKEN = "9239555284:AAGLHWKhIWYZGa9wcJ-GqmTDPwvZQ6cnqzg"
-MY_ID = 1247194117  # Вставьте сюда цифры вашего ID без кавычек
+TOKEN = os.getenv("BOT_TOKEN")
+MY_ID = int(os.getenv("MY_ID")) 
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
